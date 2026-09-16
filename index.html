@@ -1,180 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f5e8d2">
-<meta name="description" content="The wedding invitation of Saumya & Kunal — 25 & 26 November 2026.">
-<meta name="robots" content="noindex,nofollow,noarchive">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fbf5ed"><meta name="description" content="Saumya & Kunal — wedding invitation, 25 & 26 November 2026.">
 <title>Saumya & Kunal · Wedding Invitation</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="texture" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 
-<!-- Cinematic physical-invitation opening -->
-<div class="welcome" id="welcome" aria-label="Personalized wedding invitation">
-  <div class="welcome-petal petal-a" aria-hidden="true"></div>
-  <div class="welcome-petal petal-b" aria-hidden="true"></div>
-  <div class="welcome-glow" aria-hidden="true"></div>
-  <div class="welcome-stage">
-    <div class="welcome-toran" aria-hidden="true"><span>❧</span><i></i><span>❧</span></div>
-    <p class="welcome-mantra devanagari">॥ श्री गणेशाय नमः ॥</p>
-    <div class="welcome-envelope" id="welcomeEnvelope">
-      <div class="envelope-shadow"></div>
-      <div class="envelope-back"></div>
-      <div class="invite-cover" id="inviteCover">
-        <div class="cover-sheen"></div>
-        <img src="assets/page-1.jpg" alt="Saumya and Kunal wedding invitation cover">
-        <div class="printed-recipient" id="recipientPlaque" aria-label="Invitation recipient">
-          <span class="recipient-label devanagari">श्री / श्रीमती</span>
-          <strong id="recipientName">आपले स्नेही</strong>
-          <span class="recipient-inkline" aria-hidden="true"></span>
-          <small class="devanagari">यांस सप्रेम निमंत्रण !</small>
-        </div>
-      </div>
-      <div class="envelope-flap"></div>
-      <div class="envelope-seal" aria-hidden="true">♥</div>
+<!-- Inspired by the interaction patterns of the referenced site: seal → open → music → scroll reveals. -->
+<section class="opening" id="welcome">
+  <div class="petal p1">✿</div><div class="petal p2">❀</div><div class="petal p3">✾</div>
+  <div class="opening-inner">
+    <p class="eyebrow">You are invited</p>
+    <button class="seal" id="seal" aria-label="Tap the seal to open the invitation"><span>S</span><i>&amp;</i><span>K</span></button>
+    <p class="tap-note">Tap the seal</p>
+    <div class="opening-card">
+      <div class="card-flap"></div>
+      <img src="assets/page-1.jpg" alt="Saumya and Kunal wedding invitation cover">
+      <div class="recipient" id="recipient">With love, for you</div>
     </div>
-    <div class="welcome-copy">
-      <p class="welcome-kicker devanagari">आपल्यासाठी खास</p>
-      <h1 class="welcome-title devanagari">शुभविवाह</h1>
-      <p class="welcome-names script">Saumya <span>&amp;</span> Kunal</p>
-      <p class="welcome-date devanagari">दि. २५ व २६ नोव्हेंबर २०२६</p>
-      <button class="enter-btn" id="enterInvite" type="button"><span>✦</span> निमंत्रण उघडा <span>✦</span></button>
-      <p class="personalize-hint" id="personalizeHint">आपल्यासाठी प्रेमाने तयार केलेले निमंत्रण</p>
-    </div>
+    <button class="open-invite" id="openInvite">Open invitation <span>↗</span></button>
   </div>
-</div>
+</section>
 
-<div class="ornament ornament-a" aria-hidden="true">❈</div>
-<div class="ornament ornament-b" aria-hidden="true">❈</div>
+<audio id="bgm" preload="auto" loop><source src="assets/Amaran Violin.m4a" type="audio/mp4"></audio>
+<button class="music" id="music" aria-label="Toggle music">♪</button>
 
-<header class="site-nav">
-  <a class="brand" href="#top" aria-label="Saumya and Kunal home"><span>S</span><i>&amp;</i><span>K</span></a>
-  <nav aria-label="Main navigation">
-    <a href="#celebrations">Celebrations</a>
-    <a href="#invitation">Invitation</a>
-    <a href="#venue">Venue</a>
-  </nav>
-  <a class="nav-cta" href="#invitation">Open Invite <span>↗</span></a>
-</header>
+<header class="nav" id="nav"><a class="logo" href="#top">S <i>&amp;</i> K</a><nav><a href="#story">Our Story</a><a href="#celebrations">Celebrations</a><a href="#invitation">Invitation</a><a href="#venue">Venue</a></nav><a class="nav-open" href="#invitation">Open invite ↗</a></header>
 
 <main id="top">
-<section class="hero">
+<section class="hero section">
   <div class="hero-copy reveal">
-    <p class="devanagari">॥ श्री गणेशाय नमः ॥</p>
-    <p class="eyebrow">Together with our families</p>
-    <p class="script">Saumya <span>&amp;</span> Kunal</p>
-    <h1>A beautiful beginning,<br><em>made brighter by you.</em></h1>
-    <p class="hero-date">25 <b>&amp;</b> 26 November 2026</p>
-    <div class="ornamental-rule"><span></span><b>✦</b><span></span></div>
+    <p class="eyebrow">We're getting married</p>
+    <h1>Saumya <span>&amp;</span> Kunal</h1>
+    <p class="hero-date">25 &amp; 26 November 2026</p>
+    <p class="hero-place">Nandan Kanan Hotel &amp; Resort · Dewas, Madhya Pradesh</p>
+    <div class="rule"><span></span><b>✦</b><span></span></div>
     <p class="hero-text">Two days of rituals, laughter, blessings and celebration.<br>We would love to have you with us.</p>
-    <div class="hero-actions">
-      <a class="primary-btn" href="#celebrations">Explore the celebrations <span>↓</span></a>
-      <button class="share-btn" id="shareBtn" type="button">Share invitation <span>↗</span></button>
-    </div>
+    <a class="button" href="#celebrations">Join us <span>↓</span></a>
   </div>
-  <a class="hero-invite reveal" href="#invitation" aria-label="Open invitation">
-    <span class="invite-label">Our invitation</span>
-    <img src="assets/page-1.jpg" alt="Wedding invitation cover for Saumya and Kunal">
-    <span class="invite-hint">Tap to open · 01 / 07</span>
-  </a>
-  <div class="hero-scroll">Scroll to discover <span>↓</span></div>
+  <a class="hero-card reveal" href="#invitation"><span>Our invitation</span><img src="assets/page-1.jpg" alt="Wedding invitation cover"><small>Tap to open · 01 / 07</small></a>
 </section>
 
-<section class="blessing section reveal">
-  <p class="eyebrow devanagari">श्री रेणुका प्रसन्न · श्री ज्योतिबा प्रसन्न</p>
-  <h2>With the blessings of our families,<br><em>we begin our forever.</em></h2>
-  <p>Come be part of the rituals, laughter, photographs and all the in-between moments that make a wedding unforgettable.</p>
-</section>
+<section class="countdown section" id="countdownSection"><div class="reveal"><p class="eyebrow">The big day is coming</p><h2>Counting down to <em>forever</em></h2><p>Shaadi · 26 November 2026 · 12:14 PM</p></div>
+<div class="clock reveal"><div><strong data-unit="days">00</strong><small>Days</small></div><i>:</i><div><strong data-unit="hours">00</strong><small>Hours</small></div><i>:</i><div><strong data-unit="minutes">00</strong><small>Minutes</small></div><i>:</i><div><strong data-unit="seconds">00</strong><small>Seconds</small></div></div></section>
 
-<section class="countdown-section section">
-  <div class="section-head reveal">
-    <p class="eyebrow">The countdown</p>
-    <h2>Until the <em>Shaadi</em></h2>
-    <p>26 November 2026 · 12:14 PM</p>
-  </div>
-  <div class="countdown reveal" id="countdown" aria-label="Countdown to the Lagna">
-    <div><strong data-unit="days">--</strong><span>Days</span></div><i>:</i>
-    <div><strong data-unit="hours">--</strong><span>Hours</span></div><i>:</i>
-    <div><strong data-unit="minutes">--</strong><span>Minutes</span></div><i>:</i>
-    <div><strong data-unit="seconds">--</strong><span>Seconds</span></div>
-  </div>
-</section>
+<section class="story section" id="story"><div class="story-copy reveal"><p class="eyebrow">A story painted in flowers</p><h2>Our story,<br><em>our next chapter.</em></h2><p>We are bringing together the rituals and moments that matter most to us. From the first celebration to the wedding day, we would be delighted to have our favourite people close.</p><p>Come for the colours, stay for the vows, and make these two days part of our story.</p></div><div class="story-art reveal"><div class="flower-ring">✿</div><div class="story-word">together</div></div></section>
 
-<section class="celebrations section" id="celebrations">
-  <div class="section-head reveal">
-    <p class="eyebrow">Save the moments</p>
-    <h2>Three celebrations. <em>Two beautiful days.</em></h2>
-    <p>As featured in our invitation.</p>
-  </div>
-  <div class="timeline">
-    <article class="event reveal"><div class="event-date">25<small>NOV</small></div><div class="dot"></div><div class="event-body"><span class="time">11:00 AM onwards</span><h3>Turmeric Twirl</h3><p>25th November 2026</p><small class="place">Venue: Nandan Kanan Hotel &amp; Resort</small></div></article>
-    <article class="event reveal"><div class="event-date">25<small>NOV</small></div><div class="dot"></div><div class="event-body"><span class="time">8:00 PM onwards</span><h3>Reception</h3><p>25th November 2026</p><small class="place">Venue: Nandan Kanan Hotel &amp; Resort</small></div></article>
-    <article class="event featured reveal"><div class="event-date">26<small>NOV</small></div><div class="dot"></div><div class="event-body"><span class="time">12:14 PM</span><h3>Shaadi</h3><p>26th November 2026</p><small class="place">Venue: Nandan Kanan Hotel &amp; Resort</small></div></article>
-  </div>
-</section>
+<section class="glimpse section"><div class="section-head reveal"><p class="eyebrow">A glimpse of our invitation</p><h2>Made with love,<br><em>page by page.</em></h2></div><div class="glimpse-grid"><img class="reveal" src="assets/page-1.jpg" alt="Invitation page 1"><img class="reveal" src="assets/page-2.jpg" alt="Invitation page 2"><img class="reveal" src="assets/page-3.jpg" alt="Invitation page 3"><img class="reveal" src="assets/page-4.jpg" alt="Invitation page 4"><img class="reveal" src="assets/page-5.jpg" alt="Invitation page 5"><img class="reveal" src="assets/page-6.jpg" alt="Invitation page 6"><img class="reveal" src="assets/page-7.jpg" alt="Invitation page 7"></div></section>
 
-<section class="invitation-section section" id="invitation">
-  <div class="section-head reveal">
-    <p class="eyebrow">The invitation</p>
-    <h2>Turn the <em>pages.</em></h2>
-    <p>Our printed Patrika, brought to life for your screen.</p>
-  </div>
-  <div class="viewer reveal">
-    <button class="viewer-arrow" id="prev" aria-label="Previous page">←</button>
-    <button class="page-frame" id="pageOpen" type="button" aria-label="View invitation page larger">
-      <img id="invitePage" src="assets/page-1.jpg" alt="Wedding invitation page 1">
-    </button>
-    <button class="viewer-arrow" id="next" aria-label="Next page">→</button>
-  </div>
-  <div class="page-meta"><span id="pageNumber">01</span><div class="progress"><span id="progressBar"></span></div><span>07</span></div>
-  <p class="swipe-note">Swipe on mobile · use the arrows · tap the page to enlarge</p>
-</section>
+<section class="celebrations section" id="celebrations"><div class="section-head reveal"><p class="eyebrow">Join us</p><h2>The <em>celebrations</em></h2><p>Three moments, two beautiful days.</p></div><div class="events">
+<article class="event reveal"><div class="event-date">25<small>NOV</small></div><div><span>11:00 AM onwards</span><h3>Turmeric Twirl</h3><p>A bright beginning to the celebrations.</p></div></article>
+<article class="event reveal"><div class="event-date">25<small>NOV</small></div><div><span>8:00 PM onwards</span><h3>Reception</h3><p>An evening of celebration, warmth and togetherness.</p></div></article>
+<article class="event featured reveal"><div class="event-date">26<small>NOV</small></div><div><span>12:14 PM</span><h3>Shaadi</h3><p>The moment we begin our forever.</p></div></article>
+</div></section>
 
-<section class="venue section" id="venue">
-  <div class="venue-card reveal">
-    <div class="venue-copy">
-      <p class="eyebrow">Where we celebrate</p>
-      <h2>Nandan Kanan<br><em>Hotel &amp; Resort</em></h2>
-      <p>Turmeric Twirl, Reception and Shaadi are featured in the invitation at this venue.</p>
-      <div class="venue-meta"><span>25 NOV</span><span>26 NOV</span><span>DEWAS</span></div>
-      <p class="venue-address">Mumbai Agra Highway, Dewas, Madhya Pradesh 455001</p>
-      <a class="map-button" href="https://maps.apple.com/place?address=Mumbai%20Agra%20Highway,%20Dewas,%20455001,%20Madhya%20Pradesh,%20India&coordinate=22.918962,76.000876&name=Nandan%20Kanan%20Hotel%20%26%20Resort" target="_blank" rel="noopener">Open venue in Maps ↗</a>
-    </div>
-    <div class="venue-seal" aria-hidden="true"><span>N</span><i>&amp;</i><span>K</span></div>
-  </div>
-</section>
+<section class="invitation section" id="invitation"><div class="section-head reveal"><p class="eyebrow">The invitation</p><h2>Open every <em>chapter.</em></h2><p>Swipe, tap or use the arrows to explore the Patrika.</p></div><div class="viewer reveal"><button id="prev" aria-label="Previous page">←</button><button class="page" id="pageOpen"><img id="invitePage" src="assets/page-1.jpg" alt="Invitation page 1"></button><button id="next" aria-label="Next page">→</button></div><div class="page-meta"><span id="pageNumber">01</span><div><span id="progressBar"></span></div><span>07</span></div></section>
 
-<section class="closing section reveal">
-  <div>
-    <p class="devanagari">॥ श्री गणेशाय नमः ॥</p>
-    <p class="script">Saumya <span>&amp;</span> Kunal</p>
-    <h2>We can't wait to<br><em>celebrate with you.</em></h2>
-    <p>Your presence will make these moments even more special.</p>
-    <div class="ornamental-rule"><span></span><b>✦</b><span></span></div>
-    <strong>25 · 26 NOVEMBER 2026</strong>
-  </div>
-</section>
+<section class="venue section" id="venue"><div class="venue-card reveal"><div><p class="eyebrow">Wedding venue</p><h2>Nandan Kanan<br><em>Hotel &amp; Resort</em></h2><p>Mumbai Agra Highway · Dewas, Madhya Pradesh 455001</p><p>All three celebrations are at the same beautiful address.</p><a class="button" href="https://maps.apple.com/place?address=Mumbai%20Agra%20Highway,%20Dewas,%20455001,%20Madhya%20Pradesh,%20India&name=Nandan%20Kanan%20Hotel%20%26%20Resort" target="_blank" rel="noopener">Open in Maps ↗</a></div><div class="venue-mark">N<br><i>&amp;</i><br>K</div></div></section>
+
+<section class="closing section"><div class="reveal"><p class="eyebrow">Made with love</p><h2>We can't wait to<br><em>celebrate with you.</em></h2><p>25 · 26 November 2026</p><div class="rule"><span></span><b>✦</b><span></span></div><strong>SAUMYA &amp; KUNAL</strong></div></section>
 </main>
-
-<footer><div class="footer-mark">S <span>&amp;</span> K</div><p>Saumya &amp; Kunal · 25 &amp; 26 November 2026</p><a href="#top">Back to top ↑</a></footer>
-
-<div class="lightbox" id="lightbox" hidden>
-  <button class="lightbox-close" id="closeLightbox" aria-label="Close invitation">×</button>
-  <button class="lightbox-arrow left" id="lightPrev" aria-label="Previous page">←</button>
-  <img id="lightImage" src="assets/page-1.jpg" alt="Enlarged wedding invitation page">
-  <button class="lightbox-arrow right" id="lightNext" aria-label="Next page">→</button>
-</div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-<audio id="weddingMusic" preload="auto" loop playsinline>
-  <source src="assets/Amaran Violin.m4a" type="audio/mp4">
-</audio>
-<button class="music-toggle" id="musicToggle" type="button" aria-label="Play wedding music" aria-pressed="false">♫</button>
+<footer><span>S &amp; K</span><span>25 · 26 November 2026</span><a href="#top">Back to top ↑</a></footer>
+<div class="lightbox" id="lightbox" hidden><button id="close">×</button><button id="lightPrev">←</button><img id="lightImage" src="assets/page-1.jpg" alt="Invitation page"><button id="lightNext">→</button></div>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
