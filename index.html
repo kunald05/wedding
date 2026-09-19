@@ -1,71 +1,43 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!doctype html><html lang="mr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#fbf5ed"><meta name="description" content="Saumya & Kunal — wedding invitation, 25 & 26 November 2026.">
-<title>Saumya & Kunal · Wedding Invitation</title>
+<meta name="theme-color" content="#f6efe6"><meta name="description" content="सौम्या आणि कुणाल — २५ व २६ नोव्हेंबर २०२६.">
+<title>सौम्या &amp; कुणाल — विवाहसोहळा</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="grain" aria-hidden="true"></div>
-
-<!-- Inspired by the interaction patterns of the referenced site: seal → open → music → scroll reveals. -->
-<section class="opening" id="welcome">
-  <div class="petal p1">✿</div><div class="petal p2">❀</div><div class="petal p3">✾</div>
-  <div class="opening-inner">
-    <p class="eyebrow">You are invited</p>
-    <button class="seal" id="seal" aria-label="Tap the seal to open the invitation"><span>S</span><i>&amp;</i><span>K</span></button>
-    <p class="tap-note">Tap the seal</p>
-    <div class="opening-card">
-      <div class="card-flap"></div>
-      <img src="assets/page-1.jpg" alt="Saumya and Kunal wedding invitation cover">
-      <div class="recipient" id="recipient">With love, for you</div>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<div class="noise"></div><div class="petals" aria-hidden="true"></div>
+<section class="gate" id="welcome">
+  <div class="gate-wash"></div><div class="gate-flower flower-a">✽</div><div class="gate-flower flower-b">✿</div>
+  <div class="gate-inner">
+    <div class="gate-kicker"><span></span><p class="eyebrow">आपले हार्दिक स्वागत</p><span></span></div>
+    <div class="gate-date"><b>25</b><i>—</i><b>26</b><span>नोव्हेंबर २०२६</span></div>
+    <div class="gate-names">Saumya <small>&amp;</small> Kunal</div>
+    <p class="gate-sub">प्रेम, कुटुंब आणि आपलेपणाचा सुंदर सोहळा</p>
+    <div class="opening-card" id="openingCard" role="button" tabindex="0" aria-label="आमंत्रण उघडा">
+      <div class="card-shadow"></div><div class="card-frame"></div>
+      <div class="card-art"><img src="page-1.jpg" alt="Saumya and Kunal wedding invitation"></div>
+      <div class="card-glow"></div>
+      <div class="seal" id="seal"><span>S</span><i>&amp;</i><span>K</span></div>
     </div>
-    <button class="open-invite" id="openInvite">Open invitation <span>↗</span></button>
+    <button class="open-btn" id="openInvite">आमंत्रण उघडा <span>↗</span></button>
+    <p class="tap">आमंत्रण उघडण्यासाठी स्पर्श करा</p>
   </div>
+  <div class="gate-footer"><span>25 · 26 नोव्हेंबर २०२६</span><span>नंदन कानन हॉटेल &amp; रिसॉर्ट · देवास</span></div>
 </section>
-
-<audio id="bgm" preload="auto" loop><source src="assets/Amaran Violin.m4a" type="audio/mp4"></audio>
-<button class="music" id="music" aria-label="Toggle music">♪</button>
-
-<header class="nav" id="nav"><a class="logo" href="#top">S <i>&amp;</i> K</a><nav><a href="#story">Our Story</a><a href="#celebrations">Celebrations</a><a href="#invitation">Invitation</a><a href="#venue">Venue</a></nav><a class="nav-open" href="#invitation">Open invite ↗</a></header>
-
+<audio id="bgm" preload="auto" loop><source src="Amaran Violin.m4a" type="audio/mp4"></audio>
+<button class="music" id="music" aria-label="Toggle music"><span>♪</span></button>
+<header class="nav"><a class="monogram" href="#top">S<span>&amp;</span>K</a><nav><a href="#countdown">उलटगणना</a><a href="#celebrations">सोहळे</a><a href="#invitation">पत्रिका</a><a href="#venue">स्थळ</a></nav><a class="nav-link" href="#invitation">आमंत्रण पहा ↗</a></header>
 <main id="top">
-<section class="hero section">
-  <div class="hero-copy reveal">
-    <p class="eyebrow">We're getting married</p>
-    <h1>Saumya <span>&amp;</span> Kunal</h1>
-    <p class="hero-date">25 &amp; 26 November 2026</p>
-    <p class="hero-place">Nandan Kanan Hotel &amp; Resort · Dewas, Madhya Pradesh</p>
-    <div class="rule"><span></span><b>✦</b><span></span></div>
-    <p class="hero-text">Two days of rituals, laughter, blessings and celebration.<br>We would love to have you with us.</p>
-    <a class="button" href="#celebrations">Join us <span>↓</span></a>
-  </div>
-  <a class="hero-card reveal" href="#invitation"><span>Our invitation</span><img src="assets/page-1.jpg" alt="Wedding invitation cover"><small>Tap to open · 01 / 07</small></a>
-</section>
+<section class="hero"><div class="hero-bg"><img src="page-1.jpg" alt=""></div><div class="hero-overlay"></div><div class="hero-content">
+<p class="eyebrow light">आमचा विवाहसोहळा</p><h1>Saumya <small>&amp;</small> Kunal</h1><div class="hero-rule"><span></span><b>✦</b><span></span></div><p class="hero-date">२५ व २६ नोव्हेंबर २०२६</p><a class="round-arrow" href="#countdown" aria-label="Scroll down">↓</a>
+</div><div class="vertical-label">A NEW CHAPTER · 2026</div></section>
 
-<section class="countdown section" id="countdownSection"><div class="reveal"><p class="eyebrow">The big day is coming</p><h2>Counting down to <em>forever</em></h2><p>Shaadi · 26 November 2026 · 12:14 PM</p></div>
-<div class="clock reveal"><div><strong data-unit="days">00</strong><small>Days</small></div><i>:</i><div><strong data-unit="hours">00</strong><small>Hours</small></div><i>:</i><div><strong data-unit="minutes">00</strong><small>Minutes</small></div><i>:</i><div><strong data-unit="seconds">00</strong><small>Seconds</small></div></div></section>
+<section class="countdown" id="countdown"><div class="count-inner"><p class="eyebrow">उलटगणना</p><h2>आपण <em>“हो”</em> म्हणेपर्यंत</h2><p class="count-note">विवाहसोहळा · २६ नोव्हेंबर २०२६ · दुपारी १२:१४</p><div class="clock"><div><strong data-unit="days">00</strong><small>दिवस</small></div><i>:</i><div><strong data-unit="hours">00</strong><small>तास</small></div><i>:</i><div><strong data-unit="minutes">00</strong><small>मिनिटे</small></div><i>:</i><div><strong data-unit="seconds">00</strong><small>सेकंद</small></div></div></div></section>
 
-<section class="story section" id="story"><div class="story-copy reveal"><p class="eyebrow">A story painted in flowers</p><h2>Our story,<br><em>our next chapter.</em></h2><p>We are bringing together the rituals and moments that matter most to us. From the first celebration to the wedding day, we would be delighted to have our favourite people close.</p><p>Come for the colours, stay for the vows, and make these two days part of our story.</p></div><div class="story-art reveal"><div class="flower-ring">✿</div><div class="story-word">together</div></div></section>
-
-<section class="glimpse section"><div class="section-head reveal"><p class="eyebrow">A glimpse of our invitation</p><h2>Made with love,<br><em>page by page.</em></h2></div><div class="glimpse-grid"><img class="reveal" src="assets/page-1.jpg" alt="Invitation page 1"><img class="reveal" src="assets/page-2.jpg" alt="Invitation page 2"><img class="reveal" src="assets/page-3.jpg" alt="Invitation page 3"><img class="reveal" src="assets/page-4.jpg" alt="Invitation page 4"><img class="reveal" src="assets/page-5.jpg" alt="Invitation page 5"><img class="reveal" src="assets/page-6.jpg" alt="Invitation page 6"><img class="reveal" src="assets/page-7.jpg" alt="Invitation page 7"></div></section>
-
-<section class="celebrations section" id="celebrations"><div class="section-head reveal"><p class="eyebrow">Join us</p><h2>The <em>celebrations</em></h2><p>Three moments, two beautiful days.</p></div><div class="events">
-<article class="event reveal"><div class="event-date">25<small>NOV</small></div><div><span>11:00 AM onwards</span><h3>Turmeric Twirl</h3><p>A bright beginning to the celebrations.</p></div></article>
-<article class="event reveal"><div class="event-date">25<small>NOV</small></div><div><span>8:00 PM onwards</span><h3>Reception</h3><p>An evening of celebration, warmth and togetherness.</p></div></article>
-<article class="event featured reveal"><div class="event-date">26<small>NOV</small></div><div><span>12:14 PM</span><h3>Shaadi</h3><p>The moment we begin our forever.</p></div></article>
-</div></section>
-
-<section class="invitation section" id="invitation"><div class="section-head reveal"><p class="eyebrow">The invitation</p><h2>Open every <em>chapter.</em></h2><p>Swipe, tap or use the arrows to explore the Patrika.</p></div><div class="viewer reveal"><button id="prev" aria-label="Previous page">←</button><button class="page" id="pageOpen"><img id="invitePage" src="assets/page-1.jpg" alt="Invitation page 1"></button><button id="next" aria-label="Next page">→</button></div><div class="page-meta"><span id="pageNumber">01</span><div><span id="progressBar"></span></div><span>07</span></div></section>
-
-<section class="venue section" id="venue"><div class="venue-card reveal"><div><p class="eyebrow">Wedding venue</p><h2>Nandan Kanan<br><em>Hotel &amp; Resort</em></h2><p>Mumbai Agra Highway · Dewas, Madhya Pradesh 455001</p><p>All three celebrations are at the same beautiful address.</p><a class="button" href="https://maps.apple.com/place?address=Mumbai%20Agra%20Highway,%20Dewas,%20455001,%20Madhya%20Pradesh,%20India&name=Nandan%20Kanan%20Hotel%20%26%20Resort" target="_blank" rel="noopener">Open in Maps ↗</a></div><div class="venue-mark">N<br><i>&amp;</i><br>K</div></div></section>
-
-<section class="closing section"><div class="reveal"><p class="eyebrow">Made with love</p><h2>We can't wait to<br><em>celebrate with you.</em></h2><p>25 · 26 November 2026</p><div class="rule"><span></span><b>✦</b><span></span></div><strong>SAUMYA &amp; KUNAL</strong></div></section>
-</main>
-<footer><span>S &amp; K</span><span>25 · 26 November 2026</span><a href="#top">Back to top ↑</a></footer>
-<div class="lightbox" id="lightbox" hidden><button id="close">×</button><button id="lightPrev">←</button><img id="lightImage" src="assets/page-1.jpg" alt="Invitation page"><button id="lightNext">→</button></div>
-<script src="script.js"></script>
-</body></html>
+<section class="celebrations section" id="celebrations"><div class="section-top reveal"><div><p class="eyebrow">आमच्यासोबत सहभागी व्हा</p><h2>सुंदर <em>सोहळे</em></h2></div><p>दोन सुंदर दिवसांतील चार खास क्षण.</p></div><div class="events"><article class="event reveal"><div class="event-no">01</div><div class="event-date">25 <small>नोव्हें.</small></div><div class="event-copy"><span>सकाळी ११:०० वाजल्यापासून</span><h3>Turmeric Twirl</h3><p>सोहळ्याची आनंदमय सुरुवात.</p></div><b>✦</b></article><article class="event reveal"><div class="event-no">02</div><div class="event-date">25 <small>नोव्हें.</small></div><div class="event-copy"><span>दुपारी ३:०० वाजल्यापासून</span><h3>Shreemanti</h3><p>कुटुंबीयांसोबत दुपारचा सुंदर सोहळा.</p></div><b>✦</b></article><article class="event reveal"><div class="event-no">03</div><div class="event-date">25 <small>नोव्हें.</small></div><div class="event-copy"><span>रात्री ८:०० वाजल्यापासून</span><h3>Reception</h3><p>आनंद, आपुलकी आणि एकत्रितपणाने सजलेली संध्याकाळ.</p></div><b>✦</b></article><article class="event reveal featured"><div class="event-no">04</div><div class="event-date">26 <small>नोव्हें.</small></div><div class="event-copy"><span>दुपारी १२:१४</span><h3>Shaadi</h3><p>आपल्या नव्या आयुष्याची सुंदर सुरुवात.</p></div><b>✦</b></article></div></section>
+<section class="invitation section" id="invitation"><div class="section-top reveal"><div><p class="eyebrow">विवाहपत्रिका</p><h2>एक सुंदर <em>नजर.</em></h2></div><p>आमंत्रण पाहण्यासाठी स्वाइप करा, स्पर्श करा किंवा बाणांचा वापर करा.</p></div><div class="viewer reveal"><button id="prev" aria-label="Previous page">←</button><button class="page" id="pageOpen" aria-label="आमंत्रण उघडा page"><img id="invitePage" src="page-1.jpg" alt="Invitation page 1"><span>मोठे पाहण्यासाठी स्पर्श करा</span></button><button id="next" aria-label="Next page">→</button></div><div class="page-meta"><span id="pageNumber">01</span><div><span id="progressBar"></span></div><span>07</span></div></section>
+<section class="venue" id="venue"><div class="venue-image"><img src="page-7.jpg" alt="Invitation artwork"></div><div class="venue-copy reveal"><p class="eyebrow">विवाहस्थळ</p><h2>Nandan Kanan<br><em>हॉटेल &amp; रिसॉर्ट</em></h2><div class="line"></div><p>Mumbai Agra Highway · Dewas, Madhya Pradesh 455001</p><p>सर्व सोहळे याच सुंदर ठिकाणी आयोजित केले आहेत.</p><a class="button" target="_blank" rel="noopener" href="https://maps.apple.com/place?address=Mumbai%20Agra%20Highway,%20Dewas,%20455001,%20Madhya%20Pradesh,%20India&name=Nandan%20Kanan%20Hotel%20%26%20Resort">नकाशावर पाहा ↗</a></div></section>
+<section class="closing section"><div class="closing-inner reveal"><p class="eyebrow">आपली भेट होण्याची आम्हाला उत्सुकता आहे</p><h2>तुमच्यासोबत हा आनंदाचा क्षण<br><em>साजरा करण्यास आम्ही उत्सुक आहोत.</em></h2><div class="hero-rule"><span></span><b>✦</b><span></span></div><p>25 · 26 November 2026</p><strong>सौम्या &amp; कुणाल</strong></div></section>
+</main><footer><span>S &amp; K</span><span>25 · 26 November 2026</span><a href="#top">वर जा ↑</a></footer>
+<div class="lightbox" id="lightbox" hidden><button id="close">×</button><button id="lightPrev">←</button><img id="lightImage" src="page-1.jpg" alt="Invitation page"><button id="lightNext">→</button></div>
+<script src="script.js"></script></body></html>
